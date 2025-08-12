@@ -13,7 +13,10 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-image: url('bckimage.png'); /* Background image */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents image repetition */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,7 +24,7 @@
         }
 
         .container {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.9); /* 90% opaque white */
             border: 1px solid #ccc;
             padding: 40px;
             border-radius: 8px;
@@ -40,7 +43,7 @@
             font-size: 16px;
             font-weight: bold;
             color: #1e3a8a;
-            background-color: #dbeafe;
+            background-color: #dbeafe; /* Buttons remain fully opaque */
             border: 2px solid #93c5fd;
             border-radius: 6px;
             cursor: pointer;
@@ -80,10 +83,9 @@
 <body>
     <div class="container">
         <div class="button-grid">
-            <a href="http://www.dummie.com/FR" class="language-button">Français</a>
+            <a href="http://www.dummie.com/FR" class="language-button">Nederlands</a>
+            <a href="http://www.dummie.com/NL" class="language-button">Français</a>
             <a href="http://www.dummie.com/EN" class="language-button">English</a>
-            <a href="http://www.dummie.com/DE" class="language-button">Deutsch</a>
-            <a href="http://www.dummie.com/NL" class="language-button">Nederlands</a>
         </div>
     </div>
 </body>
